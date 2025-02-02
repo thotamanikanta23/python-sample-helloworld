@@ -1,0 +1,13 @@
+name: React App
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build-test-react-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+      
